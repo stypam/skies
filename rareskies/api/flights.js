@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   const { icao24 } = req.query;
   if (!icao24) return res.status(200).json([]);
 
