@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   const { type, country, alt, spd, hdg, vr } = req.query;
   const tp = decodeURIComponent(type || '');
   const co = decodeURIComponent(country || '');
